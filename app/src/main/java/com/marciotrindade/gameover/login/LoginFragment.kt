@@ -1,4 +1,4 @@
-package com.marciotrindade.gameover
+package com.marciotrindade.gameover.login
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.marciotrindade.gameover.LoginViewModel
+import com.marciotrindade.gameover.R
 import com.marciotrindade.gameover.databinding.LoginFragmentBinding
 
 class LoginFragment : Fragment() {
@@ -18,7 +20,7 @@ class LoginFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = LoginFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }

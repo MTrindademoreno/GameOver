@@ -1,12 +1,12 @@
-package com.marciotrindade.gameover
+package com.marciotrindade.gameover.login
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import com.marciotrindade.gameover.R
 import com.marciotrindade.gameover.databinding.FragmentRegisterBinding
 
 
