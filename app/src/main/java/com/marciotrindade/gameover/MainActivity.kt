@@ -2,13 +2,20 @@ package com.marciotrindade.gameover
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.util.Log
 import androidx.navigation.fragment.NavHostFragment
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
+import kotlin.properties.Delegates
 
 class MainActivity : AppCompatActivity() {
+    private val auth by lazy {
+        Firebase.auth
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
 
         val navHostFragment =
@@ -16,4 +23,7 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
         navController.graph
     }
+
+
+
 }

@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.marciotrindade.gameover">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
 
     <application
         android:allowBackup="true"
@@ -11,9 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GameOver">
-        <activity android:name=".games.TesteActivity"></activity>
-        <activity android:name=".games.DetailActivity" />
-        <activity android:name=".games.ListActivity" />
+        <activity android:name=".addGame.AddGameActivity"></activity>
+        <activity android:name=".detailGame.DetailActivity" />
+        <activity android:name=".listGame.ListActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

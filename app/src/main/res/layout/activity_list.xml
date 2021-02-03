@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 android:background="#DDDDDD"
-    tools:context=".games.ListActivity">
+    tools:context=".listGame.ListActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -22,19 +22,18 @@ android:background="#DDDDDD"
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-
             app:menu="@menu/menu_search_bar"
-            app:navigationIcon="@drawable/ic_baseline_search_24"
-            app:contentInsetStartWithNavigation="0dp"
-            app:layout_scrollFlags="scroll|enterAlways|snap">
+>
 
-            <EditText
-                android:inputType="text"
-
-                android:layout_marginEnd="10dp"
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/transparent"/>
+                android:background="@color/white"
+                android:textCursorDrawable="@null"
+                app:iconifiedByDefault="false"
+                android:voiceSearchMode="showVoiceSearchButton|launchRecognizer"
+                app:queryBackground="@null" />
         </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -51,7 +50,7 @@ android:background="#DDDDDD"
         />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabAddSubscriber"
+        android:id="@+id/fabAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"

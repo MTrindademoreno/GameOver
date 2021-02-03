@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "597206119806",
+    "project_id": "game-over-91cc3",
+    "storage_bucket": "game-over-91cc3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597206119806:android:230f08a329da2ef0cc2f2f",
+        "android_client_info": {
+          "package_name": "com.marciotrindade.gameover"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597206119806-sdemni31qcsul5vjje0lk4g9uigkh3ua.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marciotrindade.gameover",
+            "certificate_hash": "102a7263da36bc029e0163cb4c687723729cbf10"
+          }
+        },
+        {
+          "client_id": "597206119806-ivntqjvonl5citrabska4p6to89o5vr7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBOzRXEZ7YTOWuazYH5pSz_7RPONCdVgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597206119806-ivntqjvonl5citrabska4p6to89o5vr7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

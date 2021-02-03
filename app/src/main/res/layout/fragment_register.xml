@@ -6,9 +6,10 @@
     android:layout_height="match_parent"
     android:layout_marginStart="10dp"
     android:layout_marginEnd="10dp"
-    tools:context=".login.RegisterFragment">
+    tools:context=".auth.RegisterFragment">
 
     <LinearLayout
+        android:id="@+id/layoutRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
@@ -23,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tilNameRegistr"
+            android:id="@+id/tilNameRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -89,6 +90,8 @@
 
 
     </LinearLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
